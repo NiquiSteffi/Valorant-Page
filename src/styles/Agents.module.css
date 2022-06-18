@@ -1,0 +1,8 @@
+.h1{
+    color: wheat;
+}
+
+.agentsGrid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}

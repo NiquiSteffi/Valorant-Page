@@ -1,0 +1,9 @@
+.imageCard{
+    width: auto;
+    height: 300px;
+    border: 1px solid red;
+}
+
+.agentCard{
+    list-style: none;
+}
