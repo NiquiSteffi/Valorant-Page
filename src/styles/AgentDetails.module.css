@@ -1,0 +1,12 @@
+.imageContainer{
+   width: 800px;
+   height: auto; 
+}
+
+.principalContainer{
+    display: flex;
+}
+
+.detailsContainer{
+    
+}

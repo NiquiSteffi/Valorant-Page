@@ -7,19 +7,18 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import { Header } from './components/Header';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <header className="App-header">
-          <Link to="/"><h1>HOME</h1></Link>
-        </header>
+        <Header />
         <main>
-            <Routes>
-              <Route path="/" element={<LandingPage />} />
-              <Route path="/agent/:agent.uuid" element={<AgentDetails />} />
-            </Routes>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/agent/:uuid" element={<AgentDetails />} />
+          </Routes>
         </main>
       </BrowserRouter>
     </div>
