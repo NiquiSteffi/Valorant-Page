@@ -1,7 +1,14 @@
 .imageCard{
-    width: auto;
-    height: 300px;
-    border: 1px solid red;
+    width: 300px;
+    height: auto;
+    border: 3px solid rgb(95, 95, 95);
+    border-radius: 10px; 
+    position: relative;
+}
+
+.imageCard:hover{
+    content: "";
+    background: linear-gradient(rgba(255,255,255,0), violet);
 }
 
 .agentCard{
