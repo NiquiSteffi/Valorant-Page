@@ -5,9 +5,14 @@ import styles from '../styles/Header.module.css';
 export function Header() {
   return (
     <ul className={styles.principalContainer}>
-      <li className={styles.liContainer}><Link to="/"><img src={logo} alt="" className={styles.logo} /></Link></li>
-      <li className={styles.liContainer}><Link className={styles.linkContainer} to= "/">MAPAS</Link></li>
-      <li className={styles.liContainer}><Link className={styles.linkContainer} to= "/">ARMAS</Link></li>
+      <div className={styles.divLogoContainer}>
+        <li className={styles.liLogoContainer}><Link to="/"><img src={logo} alt="" className={styles.logo} /></Link></li>
+      </div>
+      <div className={styles.divLiContainer}>
+        <li className={styles.liContainer}><Link className={styles.linkContainer} to= "/">INICIO</Link></li>
+        <li className={styles.liContainer}><Link className={styles.linkContainer} to= "/">AGENTES</Link></li>
+        <li className={styles.liContainer}><Link className={styles.linkContainer} to= "/">ARMAS</Link></li>
+      </div>
     </ul>
   )
 }

@@ -7,7 +7,7 @@ export function AgentsCard({ agent }) {
       <li className={styles.agentCard}>
         <Link to={"/agent/" + agent.uuid}>
           <img
-            width={230}
+            width={200}
             height={345}
             src={imageUrl}
             alt='agent.displayName'
