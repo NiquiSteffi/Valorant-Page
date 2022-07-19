@@ -4,5 +4,13 @@
 
 .agentsGrid{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(3, auto);
+}
+
+@media (max-width: 320px) {
+    .agentsGrid{
+        padding: 0;
+        grid-template-columns: repeat(1, auto);
+        margin: 0 auto;
+    }
 }

@@ -7,12 +7,14 @@ import {
   Route,
 } from "react-router-dom";
 import { Header } from './components/Header';
+import NavBar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header />
+        <NavBar />
+        {/* <Header /> */}
         <main>
           <Routes>
             <Route path="/" element={<LandingPage />} />

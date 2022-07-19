@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import styles from '../styles/AgentsCard.module.css';
 
 export function AgentsCard({ agent }) {
-    const imageUrl = agent.fullPortraitV2;
+    const imageUrl = agent.background;
     return (
       <li className={styles.agentCard}>
         <Link to={"/agent/" + agent.uuid}>
