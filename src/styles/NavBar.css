@@ -1,7 +1,7 @@
 .navbar{
     position: fixed;
     top: 0;
-    width: 100%;
+    min-width: 100%;
     z-index: 1;
 }
 
@@ -11,4 +11,11 @@
 
 .navbar>.container{
     justify-content: end;
+}
+
+
+@media (max-width: 320px) {
+    .navbar{
+        min-width: 100% !important;
+    }
 }

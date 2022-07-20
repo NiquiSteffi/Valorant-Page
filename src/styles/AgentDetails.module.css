@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
 .principalImageContainer{
     height: 20%;
-    border: 1px solid red;
+    display: flex;
 }
 
 .imageContainer{
     width: 800px;
     height: auto; 
-    object-fit: cover; /*recorta la imagen*/
     /* border: 1px solid green; */
-    position: absolute;
+    /* position: absolute; */
     top: 70px;
     right: 10px;
+    clip-path: inset(0 25% 0 25%);
 }
 
 .principalContainer{
@@ -31,7 +32,7 @@
 }
 
 .nameContainer{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: bolder;
     font-size: 60px;
     color: white;
@@ -43,4 +44,57 @@
     font-family: 'Montserrat', sans-serif;
     border-top: 2px solid #8080803a;
     padding-top: 30px;
+}
+
+.nameRole{
+    font-size: 1rem;
+    color: white;
+}
+
+.descriptionRole{
+    color: white;
+}
+
+@media (max-width: 320px) {
+    .principalContainer{
+        flex-direction: column;
+        width: 320px;
+    }
+    
+    .principalImageContainer{
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .imageContainer{
+        margin: 0 auto;
+        width: 600px;
+        height: auto;
+        margin-bottom: 20px;
+        transform: scale(1.1);
+        margin-bottom: 20px;
+    }
+    
+    .descriptionContainer{
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .detailsContainer{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+    
+    .nameContainer{
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        font-size: 4.5rem;
+    }
 }

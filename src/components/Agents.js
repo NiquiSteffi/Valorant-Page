@@ -8,31 +8,34 @@ export function Agents() {
 
   const [agents, setAgents] = useState([]);
 
+
+  const obtenerAgente = async () => {
+    const respuesta = await axios.get("https://valorant-api.com/v1/agents")
+    const Agent = await respuesta.data.data
+    setAgents(Agent)
+  }
+
   useEffect(() => {
-    axios.get("https://valorant-api.com/v1/agents")
-      .then(response => {
-      setAgents(response.data.data)
-    })
-    .catch(e => {
-    })
+    obtenerAgente()
   }, [])
   
 
   return (
-    <ul className={styles.agentsGrid}>
-      {
-        agents.map((agent) => {
-          console.log(agents)
-          return (
-            agent.uuid !== "ded3520f-4264-bfed-162d-b080e2abccf9"
-            ?
-            <AgentsCard key={agent.uuid} agent={agent} />
-            :
-            null
-          )
-        })
-      }
-    </ul>
+    <>
+      <ul className={styles.agentsGrid}>
+        {
+          agents.map((agent) => {
+            return (
+              agent.uuid !== "ded3520f-4264-bfed-162d-b080e2abccf9"
+              ?
+              <AgentsCard key={agent.uuid} agent={agent} />
+              :
+              null
+            )
+          })
+        }
+      </ul>
+    </>
   )
   
 } 
