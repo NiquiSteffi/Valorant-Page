@@ -42,18 +42,34 @@
 .descriptionContainer{
     color: white;
     font-family: 'Montserrat', sans-serif;
-    border-top: 2px solid #8080803a;
+    /* border-top: 2px solid #8080803a; */
     padding-top: 30px;
 }
 
+.containerNameImageRole{
+    display: flex;
+    align-items: center;
+}
+
 .nameRole{
-    font-size: 1rem;
+    font-size: 2.7rem;
     color: white;
+    height: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.imageRole{
+    width: 40px;
+    height: 60px;
+    padding-top: 20px;
+    margin-left: 10px;
 }
 
 .descriptionRole{
     color: white;
+    font-family: 'Montserrat', sans-serif;
 }
+
 
 @media (max-width: 320px) {
     .principalContainer{
@@ -79,8 +95,17 @@
     }
     
     .descriptionContainer{
-        width: 95%;
+        width: 90%;
         margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    .descriptionRole{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding-bottom: 20px;
+        border-bottom: 1.5px solid #80808056;
     }
     
     .detailsContainer{
@@ -96,5 +121,12 @@
         margin-bottom: 0;
         padding-bottom: 0;
         font-size: 4.5rem;
+    }
+
+    .containerNameImageRole{
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        border-bottom: 1.5px solid #80808056;
     }
 }

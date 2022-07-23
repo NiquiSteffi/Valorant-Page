@@ -10,9 +10,16 @@ export function Agents() {
 
 
   const obtenerAgente = async () => {
-    const respuesta = await axios.get("https://valorant-api.com/v1/agents")
-    const Agent = await respuesta.data.data
-    setAgents(Agent)
+    try {
+      const respuesta = await axios.get("https://valorant-api.com/v1/agents")
+      const Agents = await respuesta.data.data
+      console.log(Agents)
+      setAgents(Agents)
+
+    }
+    catch {
+      console.log("hubo un error")
+    }
   }
 
   useEffect(() => {
