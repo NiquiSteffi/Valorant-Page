@@ -14,3 +14,11 @@
         margin: 0 auto;
     }
 }
+
+@media (max-width: 480px) {
+    .agentsGrid{
+        padding: 0;
+        grid-template-columns: repeat(1, auto);
+        margin: 0 auto;
+    }
+}

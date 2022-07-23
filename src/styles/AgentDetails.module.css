@@ -70,6 +70,64 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+@media (max-width: 480px) {
+    .principalContainer{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .principalImageContainer{
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imageContainer{
+        width: 600px;
+        height: auto;
+        margin-bottom: 20px;
+        transform: scale(1.1);
+        margin-bottom: 20px;
+    }
+    
+    .descriptionContainer{
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    .descriptionRole{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding-bottom: 20px;
+        border-bottom: 1.5px solid #80808056;
+    }
+    
+    .detailsContainer{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+    
+    .nameContainer{
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        padding-bottom: 0;
+        font-size: 4.5rem;
+    }
+
+    .containerNameImageRole{
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        border-bottom: 1.5px solid #80808056;
+    }
+
+}
 
 @media (max-width: 320px) {
     .principalContainer{
