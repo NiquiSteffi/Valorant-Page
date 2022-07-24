@@ -128,22 +128,25 @@
     }
 
     .containerImageAbilities{
-        width: 90%;
-        margin-left: 9%;
+        width: 80%;
+        margin: 0 auto;
     }
-
+    
     .imageAbilities{
-        width: 17%;
+        width: 20%;
         border: 1px solid white;
         border-radius: 20%;
         padding: 5px;
-        margin: 15px 10px 15px 15px;
+        margin: 20px 9px 15px 9px;
     }
 
     .imageAbilities:hover{
         background-color: #ff445473;
     }
 }
+
+
+
 
 
 /* @media (max-width: 320px) {
