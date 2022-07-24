@@ -127,9 +127,26 @@
         border-bottom: 1.5px solid #80808056;
     }
 
+    .containerImageAbilities{
+        width: 90%;
+        margin-left: 9%;
+    }
+
+    .imageAbilities{
+        width: 17%;
+        border: 1px solid white;
+        border-radius: 20%;
+        padding: 5px;
+        margin: 15px 10px 15px 15px;
+    }
+
+    .imageAbilities:hover{
+        background-color: #ff445473;
+    }
 }
 
-@media (max-width: 320px) {
+
+/* @media (max-width: 320px) {
     .principalContainer{
         flex-direction: column;
         width: 320px;
@@ -187,4 +204,17 @@
         padding-bottom: 20px;
         border-bottom: 1.5px solid #80808056;
     }
-}
+
+    .containerImageAbilities{
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .imageAbilities{
+        width: 20%;
+        border: 1px solid white;
+        border-radius: 20%;
+        padding: 5px;
+        margin: 15px 5px 15px 5px;
+    }
+} */

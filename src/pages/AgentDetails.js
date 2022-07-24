@@ -8,25 +8,28 @@ export function AgentDetails() {
   const { uuid } = useParams();
   const [agent, setAgent] = useState([]);
   const [agentRole, setAgentRole] = useState([]);
-  // const [agentAbilities, setAgentAbilities] = useState([]);
+  const [agentAbilities, setAgentAbilities] = useState([]);
 
 
   const getAgentsCard = async () => {
     try {
       const response = await axios.get("https://valorant-api.com/v1/agents/" + uuid)
       const agentsDetails = response.data.data
-      const agentRole = agentsDetails.role
+      const agentsRole = agentsDetails.role
+      const agentsAbilities = agentsDetails.abilities
+      setAgentAbilities(agentsAbilities)
       setAgent(agentsDetails)
-      setAgentRole(agentRole)
+      setAgentRole(agentsRole)
     }
     catch {
       console.log("hubo un error")
     }
   }
-
+  
   useEffect(() => {
     getAgentsCard()
   }, [uuid])
+  
 
   return (
     <div className={styles.principalContainer}>
@@ -59,6 +62,20 @@ export function AgentDetails() {
         <p className={styles.descriptionRole}>
           {agentRole.description}
         </p>
+        <div className={styles.containerImageAbilities}>
+          {
+            agentAbilities.map((abilities) => {
+              return (
+                <img
+                  src={abilities.displayIcon}
+                  alt={abilities.displayName}
+                  className={styles.imageAbilities}
+                  key={abilities.slot}
+                />
+              )
+            })
+          }
+        </div>
       </div>
     </div>
   )
