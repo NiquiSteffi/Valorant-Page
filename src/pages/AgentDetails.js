@@ -62,20 +62,22 @@ export function AgentDetails() {
         <p className={styles.descriptionRole}>
           {agentRole.description}
         </p>
-        <div className={styles.containerImageAbilities}>
+        <ul className={styles.containerImageAbilities}>
           {
             agentAbilities.map((abilities) => {
               return (
-                <img
-                  src={abilities.displayIcon}
-                  alt={abilities.displayName}
-                  className={styles.imageAbilities}
-                  key={abilities.slot}
-                />
+                <li className={styles.containerLiAbilities}>
+                  <img
+                    src={abilities.displayIcon}
+                    alt={abilities.displayName}
+                    className={styles.imageAbilities}
+                    key={abilities.slot}
+                  />
+                </li>
               )
             })
           }
-        </div>
+        </ul>
       </div>
     </div>
   )
