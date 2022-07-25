@@ -153,6 +153,89 @@
 }
 
 
+@media (max-width: 768px) {
+    .principalContainer{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .principalImageContainer{
+        min-width: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imageContainer{
+        width: 800px;
+        height: auto;
+        margin-bottom: 20px;
+        transform: scale(1.1);
+        margin-bottom: 20px;
+    }
+    
+    .descriptionContainer{
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    .descriptionRole{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding-bottom: 20px;
+        border-bottom: 1.5px solid #80808056;
+    }
+    
+    .detailsContainer{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+    
+    .nameContainer{
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        padding-bottom: 0;
+        font-size: 4.5rem;
+    }
+
+    .containerNameImageRole{
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        border-bottom: 1.5px solid #80808056;
+    }
+
+    .containerImageAbilities{
+        display: flex;
+        width: 90%;
+        margin: 20px 0 20px 5%;
+        padding-left: 0;
+    }
+
+    .containerLiAbilities{
+        width: 30%;
+        text-align: center;
+        list-style: none;
+    }
+    
+    .imageAbilities{
+        width: 90px;
+        border: 1px solid white;
+        border-radius: 20%;
+        padding: 5px;
+    }
+
+    .imageAbilities:hover{
+        background-color: #ff445473;
+    }
+}
+
+
 
 
 

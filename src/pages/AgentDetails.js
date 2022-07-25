@@ -66,6 +66,10 @@ export function AgentDetails() {
           {
             agentAbilities.map((abilities) => {
               return (
+                abilities.displayIcon === null
+                ?
+                null
+                :
                 <li className={styles.containerLiAbilities}>
                   <img
                     src={abilities.displayIcon}

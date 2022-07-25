@@ -9,12 +9,25 @@
     background-image: url(../assets/valorant-logo.png);
 }
 
+.navbar-toggler{
+    display: flex;
+    justify-content: end;
+}
+
 .navbar>.container{
     justify-content: end;
 }
 
+.nav-link{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: start;
+    margin-left: 15px;
+}
 
-@media (max-width: 320px) {
+
+@media (max-width: 480px) {
     .navbar{
         min-width: 100% !important;
     }
