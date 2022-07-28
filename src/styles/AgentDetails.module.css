@@ -224,7 +224,7 @@
     }
     
     .imageAbilities{
-        width: 90px;
+        min-width: 10%;
         border: 1px solid white;
         border-radius: 20%;
         padding: 5px;
@@ -239,7 +239,7 @@
 
 
 
-/* @media (max-width: 320px) {
+@media (max-width: 320px) {
     .principalContainer{
         flex-direction: column;
         width: 320px;
@@ -303,11 +303,17 @@
         margin-left: 10px;
     }
 
+    .containerLiAbilities{
+        width: 22%;
+        text-align: center;
+        list-style: none;
+    }
+
     .imageAbilities{
-        width: 20%;
+        min-width: 10%;
         border: 1px solid white;
         border-radius: 20%;
         padding: 5px;
         margin: 15px 5px 15px 5px;
     }
-} */
+}
